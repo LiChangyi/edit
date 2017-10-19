@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑器</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="tool">
+            <li id="fontSize">
+                <input type="button" value="字号">
+                <ul class="list">
+                    <li><input type="button" value="14px"></li>
+                    <li><input type="button" value="16px"></li>
+                    <li><input type="button" value="18px"></li>
+                    <li><input type="button" value="22px"></li>
+                    <li><input type="button" value="24px"></li>
+                </ul>
+            </li>
+            <li class="fontStyle"><input type="button" name="italic" value="斜体"></li>
+            <li class="fontStyle"><input type="button" name="blod" value="粗体"></li>
+            <li class="fontStyle"><input type="button" name="underline" value="下划线"></li>
+            <li class="fontColor"><input type="color" id="changeFontColor"></li>
+            <li><input type="button" id="insertImgBtn" value="插入图片"></li>
+        </div>
+        <div class="edit" contenteditable="true">               
+            了解在面向过程程序设计中C++对C功能的扩充与增强；进一步熟练在不同系统和编译环境下编辑、编译和运行C++程序的方法；进一步熟悉C++程序的结构和编程方法       
+        </div>
+    </div>
+    <div class="insertImg">
+        <p>上传图片或者输入图片的网络链接</p>
+        <input type="file" name="fileImg" id="fileImg">
+        <input type="text" placeholder="输入图片的网络地址" name="txtImg" id="txtImg">
+        <input type="button" class="insertBtn"  value="插入图片">
+        <input type="button" class="insertBtn"  value="取消">
+    </div>
+    <div class="changeImg">
+        <p class="title">修改图片大小</p>
+        <p class="changeP">当前图片宽度:<input type="text" id="changeImgW">px</p>
+        <p class="changeP">当前图片高度:<input type="text" id="changeImgH">px</p>
+        <input type="button" class="changeBtn"  value="确认修改">
+        <input type="button" class="changeBtn"  value="取消">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
